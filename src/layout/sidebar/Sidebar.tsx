@@ -9,12 +9,13 @@ const Sidebar = () => (
 		<EmailBadge email='adeyinka@metacare.app' />
 
 		<LinksWrap>
-			{links.map(({ title, Icon, subTitles }) => (
+			{links.map(({ title, Icon, subTitles, slug }) => (
 				<SidebarItem
 					key={title}
 					title={title}
 					Icon={Icon}
 					subTitles={subTitles}
+					slug={slug}
 				/>
 			))}
 		</LinksWrap>
@@ -26,7 +27,7 @@ export default Sidebar;
 const Wrap = styled.div`
 	/* flex: 1; */
 	width: 25rem;
-	min-width: 200px;
+	min-width: 100px;
 	padding: 20px 2rem;
 	font-size: 1.3rem;
 	border-right: 1px solid ${(props) => props.theme.colors.lines};

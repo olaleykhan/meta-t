@@ -99,7 +99,7 @@ const ChartInfo = styled.div`
 	justify-content: space-between;
 	align-items: flex-end;
 	height: 5rem;
-	padding: 0 3rem;
+	padding: 0 2rem 0 3rem;
 	margin-top: 5px;
 	.label {
 		color: ${(props) => props.theme.colors.dark};
@@ -121,8 +121,9 @@ const ChartInfo = styled.div`
 		align-items: center;
 		p {
 			color: ${(props) => props.theme.colors.dark};
-			font-size: 1rem;
+			font-size: 1.2rem;
 			font-weight: 700;
+			line-height: 1rem;
 			/* letter-spacing: 1px; */
 			/* background: red; */
 		}
@@ -132,7 +133,7 @@ const ChartInfo = styled.div`
 			border-radius: 10px;
 			border: 1px solid ${(props) => props.theme.colors.lines};
 			outline: none;
-			width: 10rem;
+			width: 14rem;
 		}
 	}
 `;
@@ -145,7 +146,7 @@ const Line = styled.div`
 
 const CheckedBox = styled.span<{ bg: string }>`
 	display: inline-block;
-	width: 10px;
-	height: 10px;
+	width: 1rem;
+	height: 1rem;
 	background-color: ${(props) => props.bg};
 `;

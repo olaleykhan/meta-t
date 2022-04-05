@@ -41,7 +41,7 @@ export const links = [
         slug:"/analytics",
         Icon: AnalyticsIcon,
         subTitles: [
-            {url: "/analytics/teams", title: "teams"},
+            {url: "/analytics/teams", title: "Teams"},
             {url: "/analytics/knowledge-base", title: "Knowledge Base"},
             {url: "/analytics/training-sam", title: "Training SAM"},
             {url: "/analytics/help-center", title: "Help Center"},

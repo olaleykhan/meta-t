@@ -7,13 +7,20 @@ import { pages } from "./constants";
 
 import DummyPage from "../pages/dummy/DummyPage";
 import Teams from "../pages/analytics/Teams";
+import HomePage from "../pages/dummy/HomePage";
 
 const Router: FC = () => (
 	<Wrap>
 		<Navbar />
 		<Routes>
+			<Route path='/' element={<HomePage />} />
+
 			{pages.map(({ title, path, Component, nestedRoutes }) => (
-				<Route key={title} path={path}>
+				<Route
+					key={title}
+					path={path}
+					element={nestedRoutes ? undefined : <Component />}>
+					<Route index element={<Component />} />
 					{nestedRoutes &&
 						nestedRoutes.map(({ title, path, Component }) => (
 							<Route key={title} path={path} element={<Component />} />

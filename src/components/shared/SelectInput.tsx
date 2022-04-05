@@ -27,6 +27,7 @@ const Select = styled.select`
 	border-radius: 10px;
 	font-weight: 600;
 	padding: 1rem;
+	font-size: 1.4rem;
 	> option {
 	}
 `;
