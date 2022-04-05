@@ -3,14 +3,23 @@ import styled from "styled-components";
 import Navbar from "../layout/navbar/Navbar";
 import { links } from "../layout/sidebar/constants";
 import { Routes, Route } from "react-router-dom";
+import { pages } from "./constants";
+
+import DummyPage from "../pages/dummy/DummyPage";
+import Teams from "../pages/analytics/Teams";
+
 const Router: FC = () => (
 	<Wrap>
 		<Navbar />
 		<Routes>
-			{/* <Route path='invoices' element={}>
-				<Route path=':invoiceId' element={} />
-				<Route path='sent' element={} />
-			</Route> */}
+			{pages.map(({ title, path, Component, nestedRoutes }) => (
+				<Route key={title} path={path}>
+					{nestedRoutes &&
+						nestedRoutes.map(({ title, path, Component }) => (
+							<Route key={title} path={path} element={<Component />} />
+						))}
+				</Route>
+			))}
 		</Routes>
 	</Wrap>
 );

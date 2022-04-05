@@ -12,7 +12,8 @@ const myTheme: DefaultTheme = {
         placeholderText: "#A3A3C2",
         green: "#25BB87",
         lightGreen: "rgba(37, 187, 135, 0.1)",
-        danger: "#F25A68"
+        danger: "#F25A68",
+        white: "#FFFFFF",
 	},
 };
 

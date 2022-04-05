@@ -76,7 +76,7 @@ const Wrap = styled.div`
 const NavLink = styled(Link)`
 	display: block;
 	/* font-size: 1.4rem; */
-	cursor: default;
+	cursor: pointer;
 	text-decoration: none;
 	color: ${(props) => props.theme.colors.primaryText};
 	padding: 10px 5px 5px 30px;
