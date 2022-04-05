@@ -1,13 +1,10 @@
 import React from "react";
-import { ResponsiveLine, Serie } from "@nivo/line";
+import { ResponsiveLine } from "@nivo/line";
 
 interface ComponentProps {
 	data: { id: string; color: string; data: { x: string; y: number }[] }[];
 	lineColor?: string;
 }
-// interface ComponentPropsN {
-// 	data: Serie[];
-// }
 
 const theme = {
 	axis: {

@@ -1,17 +1,8 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Sidebar from "./layout/sidebar/Sidebar";
 import AppRoutes from "./routes/Router";
 import { BrowserRouter } from "react-router-dom";
-
-// const appLogoSpin = keyframes`
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// `;
 
 const App = (): JSX.Element => (
 	<BrowserRouter>

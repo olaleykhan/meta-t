@@ -15,7 +15,7 @@ const TabSwitch: React.FC<ComponentProps> = ({
 }) => {
 	return (
 		<Wrap height={height ? height : 6}>
-			{tabs.map(({ title, index }, i) => (
+			{tabs.map(({ title, index }) => (
 				<div
 					className={`tab ${activeTab === index ? "active" : ""}`}
 					onClick={() => onClick(index)}
