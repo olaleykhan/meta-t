@@ -1,12 +1,8 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 import Navbar from "../layout/navbar/Navbar";
-import { links } from "../layout/sidebar/constants";
 import { Routes, Route } from "react-router-dom";
 import { pages } from "./constants";
-
-import DummyPage from "../pages/dummy/DummyPage";
-import Teams from "../pages/analytics/Teams";
 import HomePage from "../pages/dummy/HomePage";
 
 const Router: FC = () => (

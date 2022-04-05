@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import TabSwitch from "../../components/shared/TabSwitch";
-import { Outlet } from "react-router-dom";
 import TeamOptions from "../../layout/analytics/team-options/TeamOptions";
 import ChartSection from "../../components/analytics/ChartSection";
 

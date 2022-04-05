@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
-const DummyPage: React.FC<{ name?: string }> = ({ name }) => {
+const DummyPage: React.FC<{ name?: string }> = () => {
 	// const param = useParams();
 	const location = useLocation();
 	return (

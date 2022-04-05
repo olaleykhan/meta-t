@@ -1,5 +1,4 @@
-{
-  "name": "matacare_t",
+{ "name": "matacare_t",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import AnalyticsSearch from "../../../components/analytics/AnalyticsSearch";
-import SearchInput from "../../../components/search-input/SearchInput";
 import { GreenButton } from "../../../components/shared/Button";
 import SelectInput from "../../../components/shared/SelectInput";
 
