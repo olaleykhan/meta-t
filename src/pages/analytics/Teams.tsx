@@ -46,7 +46,6 @@ const Wrap = styled.div`
 	/* background-color: ${(props) => props.theme.colors.lightGreen}; */
 	height: calc(100vh - 235px);
 
-	/* overflow-y: auto; */
 `;
 const TabsWrapper = styled.div`
 	width: 100%;
@@ -58,6 +57,8 @@ const ChartSectionWrapper = styled.div`
 	height: 100%;
 	padding: 0 5rem 0 3.5rem;
 	overflow-y: auto;
+	::-webkit-scrollbar {
+		width: 0;
+		background: transparent; /* Optional: just make scrollbar invisible */
+	}
 `;
-
-

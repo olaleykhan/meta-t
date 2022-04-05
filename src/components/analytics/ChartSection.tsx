@@ -60,7 +60,7 @@ const ChartSection: React.FC<{ chartLineColor: string }> = ({
 							<CheckedBox bg={chartLineColor} /> High Priority
 						</p>
 						<Line />
-						<input type='date' />
+						<input type='month' />
 					</div>
 				</ChartInfo>
 				<Chart data={myData} lineColor={chartLineColor} />
@@ -100,10 +100,12 @@ const ChartInfo = styled.div`
 	align-items: flex-end;
 	height: 5rem;
 	padding: 0 3rem;
+	margin-top: 5px;
 	.label {
 		color: ${(props) => props.theme.colors.dark};
 		font-weight: 700;
 		font-size: 1.4rem;
+		letter-spacing: -0.1rem;
 		> .badge {
 			color: ${(props) => props.theme.colors.green};
 			background-color: ${(props) => props.theme.colors.lightGreen};
@@ -116,10 +118,21 @@ const ChartInfo = styled.div`
 
 	.right {
 		display: flex;
+		align-items: center;
 		p {
 			color: ${(props) => props.theme.colors.dark};
-			font-size: 1.2rem;
-			font-weight: 600;
+			font-size: 1rem;
+			font-weight: 700;
+			/* letter-spacing: 1px; */
+			/* background: red; */
+		}
+
+		input {
+			padding: 0.8rem 1rem;
+			border-radius: 10px;
+			border: 1px solid ${(props) => props.theme.colors.lines};
+			outline: none;
+			width: 10rem;
 		}
 	}
 `;

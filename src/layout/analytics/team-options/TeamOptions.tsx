@@ -56,4 +56,5 @@ const H2 = styled.h2`
 	font-size: 2rem;
 	color: ${(props) => props.theme.colors.dark};
 	font-weight: 600;
+	letter-spacing: -1px;
 `;
